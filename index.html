@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <audio autoplay>
+     <source src="hbd.mp3" type="audio/mp3"/>
+    </audio>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        #btn-alert {
+            border: none;
+            border-radius: 5px;
+            padding: 7px 10px;
+            background-color: rgb(37, 116, 226);
+            font-size: 1.3em;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.2s;
+            position: fixed;
+            left: 45%;
+            top: 45%;
+        }
+        
+        #btn-alert:hover {
+            opacity: 0.8;
+        }
+        
+        #btn-alert:focus {
+            outline: rgb(37, 116, 226) solid 3px;
+            outline-offset: 3px;
+        }
+        
+        @media (max-width: 576px) {
+            #btn-alert {
+                left: 38%;
+            }
+        }
+    </style>
+
+    <title>Happy Birthday </title>
+</head>
+
+<body>
+    <button id="btn-alert" onclick="munculinAlert()">Click Me</button>
+
+    <script>
+        async function munculinAlert() {
+            await Swal.fire('Halo Ci Vivian')
+            await Swal.fire('Tanggal berapa nih?')
+            await Swal.fire({
+                title: 'Happy 23rd Birthday',
+                text: 'Udah nambah usia nih, makin tua makin cantik makin kaya ya? Wkwk. Semoga diberi umur panjang, sehat selalu dan selalu semangat menjalani hidup ',
+                imageUrl: 'assets/1.jpg',
+                imageWidth: 400,
+                imageHeight: 300,
+                imageAlt: 'Gambar',
+
+                    })
+                }
+            
+        
+    </script>
+
+</body>
+
+</html>
